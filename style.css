@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    text-align: center;
+    padding: 20px;
+}
+
+#search {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+}
+
+#series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.series-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.series-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.episode-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.episode-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: orange;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: orange;
+    cursor: pointer;
+}
